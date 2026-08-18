@@ -1,0 +1,464 @@
+{
+  "video_path": "C:\\Users\\athas\\Downloads\\DAiSEE_cv\\DAiSEE\\DataSet\\Test\\500044\\5000441001\\5000441001.avi",
+  "total_sampled_frames": 20,
+  "frames_with_face_detected": 20,
+  "face_detection_rate": 1.0,
+  "temporal_bins": [
+    {
+      "start_sec": 0,
+      "end_sec": 10,
+      "num_frames": 20,
+      "face_detection_rate": 1.0,
+      "emotion_distribution": {
+        "neutral": 0.8829,
+        "happy": 0.0078,
+        "angry": 0.002,
+        "surprise": 0.0053,
+        "fear": 0.0958,
+        "disgust": 0.0014,
+        "sad": 0.0024
+      },
+      "eye_contact_ratio": 0.95,
+      "mean_yaw_deg": 3.85,
+      "mean_pitch_deg": 5.305
+    }
+  ],
+  "summary": {
+    "overall_emotion_distribution": {
+      "neutral": 0.8829,
+      "happy": 0.0078,
+      "angry": 0.002,
+      "surprise": 0.0053,
+      "fear": 0.0958,
+      "disgust": 0.0014,
+      "sad": 0.0024
+    },
+    "overall_eye_contact_ratio": 0.95,
+    "head_pose_success_rate": 1.0,
+    "multiple_faces_detected_frame_count": 0,
+    "head_yaw_stability_std_deg": 8.071,
+    "head_pitch_stability_std_deg": 7.137
+  },
+  "frame_records": [
+    {
+      "timestamp_sec": 0.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": -0.35869780109950966,
+      "yaw_deg": -0.833324634883812,
+      "roll_deg": 7.988088851597846,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9734724760055542,
+        "happy": 0.01772223226726055,
+        "angry": 0.002466728212311864,
+        "surprise": 0.002387847751379013,
+        "fear": 0.001648374949581921
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 0.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 1.6795252263259783,
+      "yaw_deg": 1.8700067910975662,
+      "roll_deg": 8.124556817381798,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9702265858650208,
+        "happy": 0.021186435595154762,
+        "surprise": 0.0031286964658647776,
+        "angry": 0.00178585946559906,
+        "disgust": 0.0015632534632459283
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 1.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": -21.853574245530666,
+      "yaw_deg": -14.620331833801508,
+      "roll_deg": -178.06067270633918,
+      "gaze_estimated": true,
+      "looking_at_camera": false,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9762321710586548,
+        "happy": 0.012904268689453602,
+        "surprise": 0.005136445164680481,
+        "disgust": 0.0021881936118006706,
+        "fear": 0.0016455546719953418
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 1.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 2.8177807120488296,
+      "yaw_deg": 7.018766525812197,
+      "roll_deg": -6.397296350176357,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9792105555534363,
+        "happy": 0.00915771909058094,
+        "surprise": 0.0045867785811424255,
+        "disgust": 0.002689979737624526,
+        "angry": 0.002081935526803136
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 2.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 3.3811671613468945,
+      "yaw_deg": 6.712639923663561,
+      "roll_deg": -4.055685877569449,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9865591526031494,
+        "happy": 0.005836451891809702,
+        "surprise": 0.0023219124414026737,
+        "disgust": 0.0016551980515941978,
+        "angry": 0.0015421280404552817
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 2.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 3.7592143730919645,
+      "yaw_deg": 1.1045493531828727,
+      "roll_deg": -4.011271921439025,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.981795608997345,
+        "happy": 0.00945963617414236,
+        "surprise": 0.0030410687904804945,
+        "disgust": 0.0021439683623611927,
+        "angry": 0.0016015515429899096
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 3.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 7.398272261751856,
+      "yaw_deg": -1.803547368270203,
+      "roll_deg": -2.4434577465948344,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9793279767036438,
+        "happy": 0.011717750690877438,
+        "angry": 0.002647983143106103,
+        "surprise": 0.002366424072533846,
+        "disgust": 0.001997157232835889
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 3.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 6.53601755013085,
+      "yaw_deg": -2.92577949533568,
+      "roll_deg": -2.2912877073048876,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9856972694396973,
+        "happy": 0.006130254827439785,
+        "angry": 0.002508759731426835,
+        "disgust": 0.0018829762702807784,
+        "surprise": 0.0017902906984090805
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 4.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 4.670247131198892,
+      "yaw_deg": -3.238384834538209,
+      "roll_deg": -2.3034796337501136,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9846712946891785,
+        "happy": 0.007438846863806248,
+        "angry": 0.0024690183345228434,
+        "disgust": 0.0017883703112602234,
+        "surprise": 0.0016881214687600732
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 4.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 5.965947640560842,
+      "yaw_deg": -2.473421064713005,
+      "roll_deg": -2.9433507576576803,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.986542820930481,
+        "happy": 0.005965562537312508,
+        "angry": 0.0021418496035039425,
+        "disgust": 0.0017036495264619589,
+        "surprise": 0.00163398333825171
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 5.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 6.9079391536944,
+      "yaw_deg": -1.6752056621667712,
+      "roll_deg": -1.3362491350731456,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9879608750343323,
+        "happy": 0.004796990659087896,
+        "angry": 0.0021437874529510736,
+        "disgust": 0.0016268560430034995,
+        "surprise": 0.00140091753564775
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 5.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 5.801202119364575,
+      "yaw_deg": 2.7185981784428623,
+      "roll_deg": -1.5852788317086643,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9867156147956848,
+        "happy": 0.005638542119413614,
+        "angry": 0.002122025704011321,
+        "surprise": 0.001805637264624238,
+        "disgust": 0.0017072319751605392
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 6.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 6.178496848904189,
+      "yaw_deg": 3.12302976312119,
+      "roll_deg": -1.4768710297223437,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9883739948272705,
+        "happy": 0.004169734660536051,
+        "angry": 0.002380760619416833,
+        "disgust": 0.0016194991767406464,
+        "surprise": 0.001285975449718535
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 6.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 6.942041674815272,
+      "yaw_deg": 0.8638250093108727,
+      "roll_deg": -1.8530669695789967,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9859421849250793,
+        "happy": 0.006395589094609022,
+        "angry": 0.0022147803101688623,
+        "disgust": 0.0018370073521509767,
+        "surprise": 0.001747374190017581
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 7.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 12.487609827503888,
+      "yaw_deg": 18.273045023124887,
+      "roll_deg": -3.979875918605251,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9261448383331299,
+        "fear": 0.03184620663523674,
+        "sad": 0.015216653235256672,
+        "happy": 0.009964982978999615,
+        "surprise": 0.00805867649614811
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 7.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 13.482728359403808,
+      "yaw_deg": 17.609372680390866,
+      "roll_deg": -1.3376725512532295,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "fear": 0.9465763568878174,
+        "sad": 0.029012778773903847,
+        "neutral": 0.012468227185308933,
+        "surprise": 0.006074107252061367,
+        "angry": 0.003906271420419216
+      },
+      "top_emotion": "fear"
+    },
+    {
+      "timestamp_sec": 8.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 10.520444513408364,
+      "yaw_deg": 18.73709776133336,
+      "roll_deg": -0.8750549727647076,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "fear": 0.934823215007782,
+        "surprise": 0.05288063734769821,
+        "sad": 0.004010463133454323,
+        "neutral": 0.003829783760011196,
+        "happy": 0.002151378197595477
+      },
+      "top_emotion": "fear"
+    },
+    {
+      "timestamp_sec": 8.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 9.190478544525462,
+      "yaw_deg": 6.942849494561028,
+      "roll_deg": -1.8553613538757536,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9877287149429321,
+        "happy": 0.004738731309771538,
+        "angry": 0.002891569398343563,
+        "disgust": 0.0013064510421827435,
+        "surprise": 0.0012412858195602894
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 9.0,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 10.48393447118903,
+      "yaw_deg": 10.675426019905782,
+      "roll_deg": -1.6219362136616888,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9863946437835693,
+        "happy": 0.006346957292407751,
+        "angry": 0.0022071413695812225,
+        "surprise": 0.0017995695816352963,
+        "disgust": 0.0012625115923583508
+      },
+      "top_emotion": "neutral"
+    },
+    {
+      "timestamp_sec": 9.5,
+      "face_detected": true,
+      "num_faces_detected": 1,
+      "multiple_faces_warning": false,
+      "pose_success": true,
+      "pitch_deg": 10.111039494543348,
+      "yaw_deg": 8.91180287475431,
+      "roll_deg": -1.7073120845742424,
+      "gaze_estimated": true,
+      "looking_at_camera": true,
+      "emotion_success": true,
+      "emotion_probabilities": {
+        "neutral": 0.9879364371299744,
+        "happy": 0.0052145482040941715,
+        "angry": 0.0019820646848529577,
+        "surprise": 0.0015615264419466257,
+        "disgust": 0.0012282257666811347
+      },
+      "top_emotion": "neutral"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "model_key": "daisee_engagement_binary_xgboost",
+    "model_type": "XGBClassifier",
+    "top_features": [
+      {
+        "feature": "emotion_angry",
+        "display_name": "Angry expression share",
+        "mean_abs_shap": 1.1452091932296753
+      },
+      {
+        "feature": "head_pitch_stability_std_deg",
+        "display_name": "Head pitch stability",
+        "mean_abs_shap": 1.1329691410064697
+      },
+      {
+        "feature": "emotion_happy",
+        "display_name": "Happy expression share",
+        "mean_abs_shap": 1.0457277297973633
+      },
+      {
+        "feature": "head_yaw_stability_std_deg",
+        "display_name": "Head yaw stability",
+        "mean_abs_shap": 1.0108880996704102
+      },
+      {
+        "feature": "emotion_neutral",
+        "display_name": "Neutral expression share",
+        "mean_abs_shap": 0.9653260707855225
+      },
+      {
+        "feature": "emotion_sad",
+        "display_name": "Sad expression share",
+        "mean_abs_shap": 0.8262192010879517
+      },
+      {
+        "feature": "emotion_fear",
+        "display_name": "Fear expression share",
+        "mean_abs_shap": 0.6822578310966492
+      },
+      {
+        "feature": "overall_eye_contact_ratio",
+        "display_name": "Eye-contact ratio (approx.)",
+        "mean_abs_shap": 0.48698702454566956
+      },
+      {
+        "feature": "emotion_disgust",
+        "display_name": "Disgust expression share",
+        "mean_abs_shap": 0.47103217244148254
+      },
+      {
+        "feature": "emotion_surprise",
+        "display_name": "Surprise expression share",
+        "mean_abs_shap": 0.38912418484687805
+      },
+      {
+        "feature": "face_detection_rate",
+        "display_name": "Face detection rate",
+        "mean_abs_shap": 0.06295289099216461
+      },
+      {
+        "feature": "multiple_faces_detected_frame_count",
+        "display_name": "Multiple-faces-detected frames",
+        "mean_abs_shap": 0.0
+      }
+    ]
+  },
+  {
+    "model_key": "chalearn_extraversion_random_forest",
+    "model_type": "RandomForestRegressor",
+    "top_features": [
+      {
+        "feature": "emotion_happy",
+        "display_name": "Happy expression share",
+        "mean_abs_shap": 0.04839389302624639
+      },
+      {
+        "feature": "emotion_angry",
+        "display_name": "Angry expression share",
+        "mean_abs_shap": 0.014865497617551666
+      },
+      {
+        "feature": "head_yaw_stability_std_deg",
+        "display_name": "Head yaw stability",
+        "mean_abs_shap": 0.010527860534778614
+      },
+      {
+        "feature": "emotion_surprise",
+        "display_name": "Surprise expression share",
+        "mean_abs_shap": 0.00987798114917102
+      },
+      {
+        "feature": "head_pitch_stability_std_deg",
+        "display_name": "Head pitch stability",
+        "mean_abs_shap": 0.006967273115189663
+      },
+      {
+        "feature": "overall_eye_contact_ratio",
+        "display_name": "Eye-contact ratio (approx.)",
+        "mean_abs_shap": 0.006260171433479886
+      },
+      {
+        "feature": "emotion_neutral",
+        "display_name": "Neutral expression share",
+        "mean_abs_shap": 0.005025490349229558
+      },
+      {
+        "feature": "emotion_fear",
+        "display_name": "Fear expression share",
+        "mean_abs_shap": 0.004297093309539153
+      },
+      {
+        "feature": "emotion_sad",
+        "display_name": "Sad expression share",
+        "mean_abs_shap": 0.0033652860726209057
+      },
+      {
+        "feature": "emotion_disgust",
+        "display_name": "Disgust expression share",
+        "mean_abs_shap": 0.003150079048674258
+      },
+      {
+        "feature": "face_detection_rate",
+        "display_name": "Face detection rate",
+        "mean_abs_shap": 0.0016274106834143467
+      },
+      {
+        "feature": "multiple_faces_detected_frame_count",
+        "display_name": "Multiple-faces-detected frames",
+        "mean_abs_shap": 0.0
+      }
+    ]
+  },
+  {
+    "model_key": "chalearn_interview_random_forest",
+    "model_type": "RandomForestClassifier",
+    "top_features": [
+      {
+        "feature": "emotion_happy",
+        "display_name": "Happy expression share",
+        "mean_abs_shap": 0.06538572436850922
+      },
+      {
+        "feature": "emotion_sad",
+        "display_name": "Sad expression share",
+        "mean_abs_shap": 0.027979667066362682
+      },
+      {
+        "feature": "emotion_surprise",
+        "display_name": "Surprise expression share",
+        "mean_abs_shap": 0.026420038807151318
+      },
+      {
+        "feature": "emotion_fear",
+        "display_name": "Fear expression share",
+        "mean_abs_shap": 0.023394072450347404
+      },
+      {
+        "feature": "emotion_angry",
+        "display_name": "Angry expression share",
+        "mean_abs_shap": 0.02321440678980606
+      },
+      {
+        "feature": "head_yaw_stability_std_deg",
+        "display_name": "Head yaw stability",
+        "mean_abs_shap": 0.02017396463671633
+      },
+      {
+        "feature": "emotion_neutral",
+        "display_name": "Neutral expression share",
+        "mean_abs_shap": 0.016377760687587294
+      },
+      {
+        "feature": "head_pitch_stability_std_deg",
+        "display_name": "Head pitch stability",
+        "mean_abs_shap": 0.016131384498129887
+      },
+      {
+        "feature": "overall_eye_contact_ratio",
+        "display_name": "Eye-contact ratio (approx.)",
+        "mean_abs_shap": 0.013801514140804683
+      },
+      {
+        "feature": "face_detection_rate",
+        "display_name": "Face detection rate",
+        "mean_abs_shap": 0.010916107221239911
+      },
+      {
+        "feature": "emotion_disgust",
+        "display_name": "Disgust expression share",
+        "mean_abs_shap": 0.009228994718006277
+      },
+      {
+        "feature": "multiple_faces_detected_frame_count",
+        "display_name": "Multiple-faces-detected frames",
+        "mean_abs_shap": 0.0
+      }
+    ]
+  }
+]

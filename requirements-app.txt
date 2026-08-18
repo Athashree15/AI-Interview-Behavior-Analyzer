@@ -1,0 +1,2 @@
+# Adds to everything already installed (phase1/phase2/training).
+streamlit==1.38.0

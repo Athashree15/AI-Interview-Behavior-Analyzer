@@ -1,0 +1,48 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Large Datasets & Raw Videos (>100MB)
+data/
+data_raw/
+*.mp4
+*.avi
+*.mov
+*.mkv
+!samples/*.mp4
+
+# Cache & logs
+cache/
+.pytest_cache/
+*.log
+logs/
+
+# Large Model weights
+models/pretrained/*.pth
+models/pretrained/*.bin
+models/pretrained/*.onnx
+
+# Project report / documents (Submitted separately as per rules)
+*.docx
+*.pdf
+!docs/sample_cv.pdf
+report/
+reports/
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large trained model files (>50MB) - download links provided in README
+models/trained/*.joblib
+models/trained/*.pkl

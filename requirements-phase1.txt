@@ -1,0 +1,7 @@
+# Phase 1 (dataset inspection) requirements only.
+# The full pipeline requirements.txt (vision/audio/NLP/training deps)
+# will be provided in Phase 2 onward, once the dataset shape is confirmed.
+
+pyyaml==6.0.2
+pandas==2.2.3
+opencv-python==4.10.0.84

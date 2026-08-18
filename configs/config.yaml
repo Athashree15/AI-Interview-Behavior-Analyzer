@@ -1,0 +1,75 @@
+# ============================================================
+# AI-Powered Interview Performance Analyzer — Master Config
+# ============================================================
+# Edit the paths in `datasets:` to match your local machine.
+# Nothing else in the codebase should contain a hardcoded path —
+# every script reads from this file.
+# ============================================================
+
+# ---------------- Dataset locations ----------------
+# Fill these in with the exact folders on your Windows machine.
+# Use forward slashes even on Windows (pathlib handles it fine),
+# e.g. "D:/Datasets/DAiSEE"
+datasets:
+  daisee:
+    root: "C:/Users/athas/Downloads/DAiSEE_cv/DAiSEE"
+  chalearn_fi_v2:
+    root: "C:/Users/athas/Downloads/Chalearn/first-impressions" # folder that contains train/val/test + annotation files
+
+# ---------------- Runtime / hardware ----------------
+runtime:
+  device: "auto"          # "auto" | "cuda" | "cpu"  — auto detects CUDA at runtime
+  num_workers: 4           # dataloader workers, lower this if inspection scripts feel slow
+  seed: 42                 # global random seed for reproducibility
+
+# ---------------- Video processing ----------------
+video:
+  sample_fps: 2                 # frames sampled per second for feature extraction (Phase 2+)
+  max_video_duration_sec: 600   # safety cap for uploaded interview videos later in the pipeline
+
+# ---------------- Cache / output directories ----------------
+paths:
+  cache_dir: "./cache"
+  outputs_dir: "./outputs"
+  logs_dir: "./logs"
+
+# ---------------- Phase-1 inspection settings ----------------
+inspection:
+  # how many video files per dataset split to probe for fps/resolution/duration
+  # (probing every single file is slow and unnecessary just for a feasibility check)
+  sample_videos_per_split: 25
+  # write a full per-file inventory CSV in addition to the console summary
+  write_inventory_csv: true
+
+# ---------------- Dataset split decisions (locked after Phase 1) ----------------
+# DAiSEE: use ONLY TrainLabels.csv / ValidationLabels.csv / TestLabels.csv.
+# AllLabels.csv is intentionally ignored — it does not cleanly equal the
+# union of the three split files and risks double-counting clips.
+daisee_split:
+  ignore_all_labels_csv: true
+  drop_unlabeled_videos: true   # drops the 82 videos with no matching label row
+
+# ChaLearn First Impressions V2: val-annotation-e.zip and test-annotation-e.zip
+# are password-encrypted (2017 competition test-set protection) and we are
+# NOT pursuing the academic decryption-key request. We use ONLY the 6,000
+# officially-labeled training clips (annotation_training.pkl) and perform
+# our OWN 80/10/10 split internally. This means results are NOT directly
+# comparable to the official CVPR'17 leaderboard — this must be stated
+# explicitly in the project report's limitations section.
+chalearn_split:
+  use_only_training_annotation: true
+  custom_split_ratios: [0.8, 0.1, 0.1]   # train / val / test, applied to the 6,000 labeled clips
+  split_seed: 42                          # must match runtime.seed for reproducibility
+
+# ---------------- Visual pipeline (Phase 2) settings ----------------
+vision:
+  face_detection_confidence: 0.5
+  face_tracking_confidence: 0.5
+  refine_landmarks: true          # enables iris landmarks needed for gaze approximation
+  # yaw/pitch thresholds (degrees) within which we consider someone "facing camera"
+  # NOTE: this is head-orientation, not true gaze — documented limitation, see src/vision/gaze.py
+  facing_camera_yaw_threshold_deg: 20.0
+  facing_camera_pitch_threshold_deg: 20.0
+  emotion_model_name: "trpakov/vit-face-expression"   # HuggingFace pretrained model, no fine-tuning
+  temporal_bin_seconds: 10        # window size for temporal trajectory aggregation (matches Module 2 spec)
+  model_cache_dir: "./models/cache"   # where HF model weights get downloaded to, once

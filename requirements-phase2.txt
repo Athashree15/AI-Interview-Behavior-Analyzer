@@ -1,0 +1,21 @@
+# Phase 2 (visual pipeline) requirements.
+# Includes everything from requirements-phase1.txt plus vision/model deps.
+
+pyyaml==6.0.2
+pandas==2.2.3
+opencv-python==4.10.0.84
+numpy==1.26.4
+
+# Face landmark detection (Module 1, 3, 4)
+mediapipe==0.10.14
+
+# Emotion classification model + PyTorch backend (Module 2)
+# --- Install PyTorch with CUDA support FIRST using the command below,
+#     matching your RTX 4050 (CUDA 12.x) — do NOT let plain `pip install torch`
+#     grab a CPU-only wheel by accident:
+#
+#     pip install torch --index-url https://download.pytorch.org/whl/cu121
+#
+# Then install the rest normally:
+transformers==4.44.2
+pillow==10.4.0
