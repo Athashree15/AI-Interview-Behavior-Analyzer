@@ -114,15 +114,13 @@ Traditional candidate evaluations often suffer from unconscious human bias, inco
 
 ### Step 1: Clone Repository & Create Environment
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/AI-Interview-Behavior-Analyzer.git
+git clone https://github.com/Athashree15/AI-Interview-Behavior-Analyzer.git
 cd AI-Interview-Behavior-Analyzer
 
 # Create virtual environment
 python -m venv venv
-# On Windows:
 venv\Scripts\activate
-# On Linux/macOS:
-source venv/bin/activate
+
 ```
 
 ### Step 2: Install Dependencies
